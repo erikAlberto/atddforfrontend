@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run ci:test
-    - uses: romeovs/lcov-reporter-action@v0.2.21
+    - uses: vebr/jest-lcov-reporter@v0.2.0
       with:
         lcov-file: ./coverage/lcov.info
         github-token: ${{ secrets.GITHUB_TOKEN }}
